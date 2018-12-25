@@ -505,7 +505,7 @@ client.on('message', message => {
   }
   });
 
-var prefix= "R-";
+var prefix= "-";
 client.on("message", message => {
     if(message.content.startsWith(prefix + 'v2')) {
      let args = message.content.split(" ").slice(1);
@@ -519,7 +519,7 @@ client.on("message", message => {
     }
     });
 
-var prefix = "R-";
+var prefix = "-";
 client.on("message", message => {
     if(message.content.startsWith(prefix + 'v4')) {
      let args = message.content.split(" ").slice(1);
@@ -532,7 +532,7 @@ client.on("message", message => {
       message.channel.send(`:ballot_box_with_check: TemporarySound : \`${nam}\``).then(c => setTimeout(() => c.edit(`<@${message.author.id}> :stopwatch:  انتهى وقت الروم الصوتي`), 120000))  // 120000 دقيقتان
     }
     });
-var prefix= "R-";
+var prefix= "-";
 client.on("message", message => {
     if(message.content.startsWith(prefix + 'c2')) {
      let args = message.content.split(" ").slice(1);
@@ -546,7 +546,7 @@ client.on("message", message => {
     }
     });
 
-var prefix= "R-";
+var prefix= "-";
 client.on("message", message => {
     if(message.content.startsWith(prefix + 'c4')) {
      let args = message.content.split(" ").slice(1);
