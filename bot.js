@@ -380,7 +380,7 @@ client.on("message", message => {
 if (message.content === ("-Ch ac1")) {
 let channel = message.client.channels.find('name', "member");
 let muteRole = client.guilds.get(message.guild.id).channels.find('name', 'member');
-if (!muteRole) return message.reply("** قم بإنشآء الرومات اولا عن طريق الامر R-Ch **").catch(console.error);
+if (!muteRole) return message.reply("**شكرا**").catch(console.error);
 if(!message.channel.guild) return message.reply('**Commands in the server**');
 if(!message.member.hasPermission('ADMINISTRATOR')) return    message.channel.send('**أنت ليس لديك برمشن** `ADMINISTRATOR`' );
 channel.edit({name : `memberCount「${message.guild.memberCount}」`});
@@ -398,7 +398,7 @@ client.on("message", message => {
   if (message.content === ("-Ch ac2")) {
           let channel = message.client.channels.find('name', "hour");
            let muteRole = client.guilds.get(message.guild.id).channels.find('name', 'hour');
-  if (!muteRole) return message.reply("** قم بإنشآء الرومات اولا عن طريق الامر R-Ch **").catch(console.error);
+  if (!muteRole) return message.reply("**شكرا**").catch(console.error);
              if(!message.channel.guild) return message.reply('**Commands in the server**');
 	                         if(!message.member.hasPermission('ADMINISTRATOR')) return    message.channel.send('**أنت ليس لديك برمشن** `ADMINISTRATOR`' );
               var currentTime = new Date(),
@@ -429,7 +429,7 @@ client.on("message", message => {
 client.on("message", message => {
     if (message.content === ("R-Ch ac3")) {
           let muteRole = client.guilds.get(message.guild.id).channels.find('name', 'date');
-  if (!muteRole) return message.reply("** قم بإنشآء الرومات اولا عن طريق الامر R-Ch **").catch(console.error);
+  if (!muteRole) return message.reply("**شكرا**").catch(console.error);
            
                    if(!message.channel.guild) return message.reply('**Commands in the server**');
 	        if(!message.member.hasPermission('ADMINISTRATOR')) return    message.channel.send('**أنت ليس لديك برمشن** `ADMINISTRATOR`' );
