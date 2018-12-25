@@ -86,14 +86,14 @@ message.channel.sendEmbed(embed)
 }); 
 ////////////ALPHA BEST
 client.on("message", message => {
- if (message.content === "-help") {
+ if (message.content === "-88") {
 
   const embed = new Discord.RichEmbed() 
       .setColor("RANDOM")
       .setThumbnail(message.author.avatarURL)
       .setDescription(` 
    ** أوآمر **
-خاص في السيرفر
+-uptime ⇏ لرؤية متى اقلاع البوت
 
 `);
 
