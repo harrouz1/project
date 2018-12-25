@@ -124,7 +124,7 @@ message.channel.sendEmbed(embed)
  client.on('message', message => {
             if(!message.channel.guild) return;
 let args = message.content.split(' ').slice(1).join(' ');
-if (message.content.startsWith('-bc.')){
+if (message.content.startsWith('-bc')){
  if(!message.author.id === '274923685985386496') return;
 message.channel.sendMessage('جار ارسال الرسالة');
 message.channel.sendMessage(`[ ${client.users.size} / ${client.users.filter(m => m.presence.status !== 'online').size} ] عدد المستلمين `);
@@ -343,7 +343,7 @@ client.on('guildMemberAdd', member => {
 
 
 client.on("message", (message) => {
-if (message.content === ("R-Ch")) {
+if (message.content === ("-Ch")) {
 if(!message.member.hasPermission('ADMINISTRATOR')) return    message.channel.send("**أنت ليس لديك برمشن** `ADMINISTRATOR`" );
 	      if(!message.guild.member(client.user).hasPermission("MANAGE_CHANNELS")) return message.reply("**يحتاج البوت الى خاصية` MANAGE_CHANNELS ` **").then(msg => msg.delete(6000))
 
@@ -358,21 +358,6 @@ message.reply ("شكرا");
 });
 
 
-var prefix = "-";
-
-client.on("message", message => {
-
-            if (message.content.startsWith(prefix + "bc")) {
-                         if (!message.member.hasPermission("ADMINISTRATOR"))  return;
-  let args = message.content.split(" ").slice(1);
-  var argresult = args.join(' '); 
-  message.guild.members.filter(m => m.presence.status !== 'offline').forEach(m => {
- m.send(`${argresult}\n ${m}`);
-})
- message.channel.send(`\`${message.guild.members.filter(m => m.presence.status !== 'online').size}\` : عدد الاعضاء المستلمين`); 
- message.delete(); 
-};     
-});
 
 		
 
@@ -427,7 +412,7 @@ client.on("message", message => {
   }
 });
 client.on("message", message => {
-    if (message.content === ("R-Ch ac3")) {
+    if (message.content === ("-Ch ac3")) {
           let muteRole = client.guilds.get(message.guild.id).channels.find('name', 'date');
   if (!muteRole) return message.reply("**شكرا**").catch(console.error);
            
@@ -497,7 +482,7 @@ client.on('guildCreate', guild => {
   var rebel = new Discord.RichEmbed()
   .setColor(000000)
 		.setDescription('** شكرآ لك لإضافة بوت الرومات الخاص بنا , آستمتع  **')
-		.setFooter(" R-Bot Team ")
+		.setFooter(" -Bot Team ")
       guild.owner.send(rebel);
 });
 
@@ -689,7 +674,7 @@ message.guild.createChannel('▓▬▬▬♚▬▬▬▓', 'voice');
 });
 client.on('message', message => {
 	
-	if (message.content === "R-Build Rr") {
+	if (message.content === "-Build Rr") {
 		      if(!message.guild.member(client.user).hasPermission("MANAGE_ROLES")) return message.reply("**يحتاج البوت الى خاصية` MANAGE_ROLES ` **").then(msg => msg.delete(6000))
 
 	              if(!message.channel.guild) return message.reply('** This command only for servers **');
@@ -792,7 +777,7 @@ client.on('message', message => {
 }
 });
 
-var prefix = 'R-';
+var prefix = '-';
 
 client.on('message', message => {
     if(message.content === prefix + 'cr2') {
@@ -1312,7 +1297,7 @@ client.on('message', message => {
 	});
 	
 
-var prefix = 'R-';
+var prefix = '-';
 
 client.on('message', message => {
     if(message.content === prefix + 'cr3') {
@@ -1985,7 +1970,7 @@ client.on('message', message => {
 	
 
 
-var prefix = "R-"
+var prefix = "-"
 client.on('message', message => {
     if(message.content === prefix + 'cr1') {
 	    		      if(!message.guild.member(client.user).hasPermission("MANAGE_ROLES")) return message.reply("**يحتاج البوت الى خاصية` MANAGE_ROLES ` **").then(msg => msg.delete(6000))
