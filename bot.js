@@ -86,7 +86,7 @@ message.channel.sendEmbed(embed)
 }); 
 ////////////ALPHA BEST
 client.on("message", message => {
- if (message.content === "-helpvc") {
+ if (message.content === "-help") {
 
   const embed = new Discord.RichEmbed() 
       .setColor("RANDOM")
@@ -120,6 +120,7 @@ message.channel.sendEmbed(embed)
 
 }
 }); 
+
  client.on('message', message => {
             if(!message.channel.guild) return;
 let args = message.content.split(' ').slice(1).join(' ');
@@ -192,12 +193,6 @@ client.on("guildDelete", guild => {
 console.log(`  R bot Leave From Server -- = ${guild.name} = -- , Server Owner -- = ${guild.owner.user.username} = --`)
 });
 
- client.on('guildMemberAdd', (member) => {
-let channel = client.channels.get('525378670324350976')
-if(member.user.bot) {
-channel.send(`${member} ولكم يا عمو البوت`)
-}
-})
 
 client.on("guildCreate", guild => {
 client.channels.get("425722377406644224").send(`
@@ -217,7 +212,7 @@ ${guild.memberCount} أعضآء السيرفر
 `)
 });
 
-/الفا كودز
+
 client.on('message', message => {
 if (message.content === ("-uptime")) {
     let uptime = client.uptime;
@@ -358,7 +353,7 @@ if(!message.member.hasPermission('ADMINISTRATOR')) return    message.channel.sen
 message.channel.sendMessage('**تم إنشاء روم ساعة :small_orange_diamond:**');
 message.channel.sendMessage('**تم إنشاء روم تاريخ :small_orange_diamond:**');
 message.channel.sendMessage('**تم إنشاء روم عداد الأعضآء :small_orange_diamond:**');
-message.reply ("لتفعيل الرومات اكتب `R-Ch ac`");  
+message.reply ("شكرا");  
 }
 });
 
@@ -2261,7 +2256,7 @@ client.on('message', message => {
 	
 });
 
-//rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr
+
 
        
 client.login(process.env.BOT_TOKEN);
