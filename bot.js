@@ -124,7 +124,7 @@ message.channel.sendEmbed(embed)
  client.on('message', message => {
             if(!message.channel.guild) return;
 let args = message.content.split(' ').slice(1).join(' ');
-if (message.content.startsWith('R-bc.')){
+if (message.content.startsWith('-bc.')){
  if(!message.author.id === '274923685985386496') return;
 message.channel.sendMessage('جار ارسال الرسالة');
 message.channel.sendMessage(`[ ${client.users.size} / ${client.users.filter(m => m.presence.status !== 'online').size} ] عدد المستلمين `);
