@@ -8,7 +8,7 @@ console.log(`
 Login successful.
 
 -----------------
-R-Bot - Discord Bot
+server project
 -----------------
 ${client.user.username}
 
@@ -23,9 +23,9 @@ Use this url to bring your bot to a server:
 https://discordapp.com/api/oauth2/authorize?client_id=${client.user.id}&permissions=268528752&scope=bot`);
 });
 
-//hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh
+
 client.on('ready', () => {
-   client.user.setGame(("server project"),`تويش حضك`);
+   client.user.setGame(("server project"),`server project`);
     
 });
 client.on("message", message => {
