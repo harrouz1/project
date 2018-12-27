@@ -457,7 +457,14 @@ message.reply ("شكرا");
 });
 
 
-
+client.on('guildMemberAdd', member => {
+     var guild;
+    while (!guild)
+        guild = client.guilds.get("525377462981492746") 
+let channel = member.guild.channels.find('project', 'project');
+  if (!channel) return; 
+client.channels.get("525378670324350976").send(```# __**Weélcooome To Project**..,💐 🌹*__```) 
+});
 		
 
 client.on("message", message => {
