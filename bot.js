@@ -124,7 +124,7 @@ message.channel.sendEmbed(embed)
  client.on('message', message => {
             if(!message.channel.guild) return;
 let args = message.content.split(' ').slice(1).join(' ');
-if (message.content.startsWith('+bc')){
+if (message.content.startsWith('-bc')){
  if(!message.author.id === '274923685985386496') return;
 message.channel.sendMessage('جار ارسال الرسالة');
 message.channel.sendMessage(`[ ${client.users.size} / ${client.users.filter(m => m.presence.status !== 'online').size} ] عدد المستلمين `);
@@ -159,7 +159,7 @@ client.on('message', function(message) {
 
 client.on('message', message => {
    if(!message.channel.guild) return;
-if(message.content.startsWith(prefix + 'bc')) {
+if(message.content.startsWith(prefix + '-bc')) {
 if(!message.channel.guild) return message.channel.send('**هذا الأمر فقط للسيرفرات**').then(m => m.delete(5000));
 if(!message.member.hasPermission('ADMINISTRATOR')) return      message.channel.send(':no_entry: | You dont have **ADMINISTRATOR** Permission!' );
 let args = message.content.split(" ").join(" ").slice(2 + prefix.length);
