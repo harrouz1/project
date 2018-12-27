@@ -301,6 +301,7 @@ if (message.content === ("-uptime")) {
 }
 });
 
+	
 client.on("message", (message) => {
  
    if (message.content.startsWith("+new")) {  
